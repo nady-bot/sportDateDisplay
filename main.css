@@ -161,15 +161,15 @@ h1 {
 @media   screen and (max-width: 750px) {
 
     .body .bd-form {
-        width: 90%;
+        width: 98%;
     }
     
     .body .form div {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 3fr;
     }
     
     .body .form .input-tamplet {
-        grid-template-columns: 1fr 2fr ;
+        grid-template-columns: 2fr 3fr ;
     }
 
     .body .form .input-tamplet input ,
