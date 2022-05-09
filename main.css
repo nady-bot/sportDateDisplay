@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.header {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header div {
+
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.header div:hover {
+    background-color: rgb(216, 135, 107);
+}
+
+.body {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+.body .bd-display {
+    display: none;
+}  
+
+.body .bd-form {
+    direction: rtl;
+    background-color: rgba(245, 245, 220, 0.744);
+    border: 1px solid red ;
+    padding: 20px;
+    width: 80%;
+    font-size: 18px;
+    margin: auto;
+}
+
+.body .form div {
+    padding: 5px 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.body .form .input-tamplet {
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+}
+
+.body .form .btn-input,
+.btn-output {
+    display: block;
+    text-align: center;
+}
+
+.body .form .btn-input button {
+    background-color: rgb(11, 51, 101);
+    color: white;
+}
+
+.btn-output button {
+    background-color: black;
+    color: white;
+}
+
+.body .form div input {
+    outline: none;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.body button {
+    border: none;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    ;
+}
+
+.body .bef-aftr {
+    position: relative;
+    color : rgb(77, 19, 18);
+}
+
+.bef-aftr::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 5px;
+    top : 50%  ; 
+    left : 5%  ; 
+    margin-right: 10px;
+    background-color: rgb(77, 19, 18);
+
+}
+
+.bef-aftr::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 5px;
+    top: 50%; 
+    right : 5%; 
+    margin-left: 10px;
+    background-color: rgb(77, 19, 18);
+
+}
+
+textarea {
+    resize: none;
+    width: 90%;
+    height: 200px;
+    outline: none;
+    direction: ltr;
+    font-size: 18px ;
+}
+
+
+.div-copy{
+    position: absolute ; 
+    right: 50px ; 
+    bottom : 50px ; 
+    width: 20% ; 
+    font-size: 20px ;  
+    text-align :center ; 
+    background-color: rgba(0, 0, 0, 0.672) ; 
+    color :white ; 
+    border-radius: 20px ;  
+}
+
+@media   screen and (max-width: 750px) {
+
+    .body {
+        padding: 10px  ;
+        text-align: center;
+    }
+
+    .body .bd-form {
+        width: 100%;
+    }
+    
+    .body .form div {
+        grid-template-columns: 2fr 3fr;
+    }
+    
+    .body .form .input-tamplet {
+        grid-template-columns: 2fr 3fr ;
+    }
+
+    .body .form .input-tamplet input ,
+    .body .form .input-tamplet label  
+     {
+        margin: 5px 0 ;  
+    }
+
+    .bef-aftr::after {
+        left : 0  ; 
+    
+    }
+    
+    .bef-aftr::before {
+        right : 0 ;
+    }
+    
+  }
