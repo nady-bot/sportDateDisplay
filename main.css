@@ -160,8 +160,13 @@ h1 {
 
 @media   screen and (max-width: 750px) {
 
+    .body {
+        padding: 10px  ;
+        text-align: center;
+    }
+
     .body .bd-form {
-        width: 98%;
+        width: 100%;
     }
     
     .body .form div {
